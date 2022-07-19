@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+KR&display=swap');
+
+body {
+    background-color: beige;
+} 
+
+h1 {
+    color: cornflowerblue;
+}
+.active {
+    color: tomato;
+}
+
+.originalFont {
+    font-family: 'Noto Serif KR', 'D2Coding';
+}

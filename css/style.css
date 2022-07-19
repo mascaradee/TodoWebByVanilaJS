@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+KR&display=swap');
+
+body {
+    font-family: 'Noto Serif KR', 'D2Coding';
+    /* color: whitesmoke; */
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    color: rgb(252, 251, 250);
+    text-shadow: 0 1px 5px rgb(0 0 0 / 10%);
+}
+
+div,
+h2,
+h1 {
+    margin: 0;
+    padding: 0;
+}
+
+.hidden {
+    display: none;
+}
+
+/*이미지 전체 화면 1 - img태그 + object-fit*/
+/* .backgroundimg > img {
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+} */
+
+/*이미지 전체 화면 2 - div생성 js + background-image*/
+.backgroundimg {
+    position: relative;
+    height: 100vh;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.img-cover {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: 1;
+}
+
+
+.weather-container {
+    position: absolute;
+    top: 2%;
+    right: 2%;
+    transform: translate(-2%, -2%);
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-size: 1.3rem;
+}
+
+.area {
+    font-size: 0.8rem;
+}
+
+.clock-container {
+    position: absolute;
+    top: 30%;
+    left: 45%;
+    transform: translate(-30%, -45%);
+    font-size: 6rem;
+}
+
+.greeting-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1.5rem;
+}
+
+.placeholder {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 5px;
+}
+
+.input-text {
+    height: 50px;
+    width: 470px;
+    margin: 0;
+    padding: 0;
+    border: none;
+    border-bottom: 2px solid rgb(252, 251, 250);
+    background-color: transparent;
+    outline: none;
+    text-align: center;
+    font-size: 2rem;
+}
+
+.greeting-user {
+    text-align: center;
+    font-size: 2.25em;
+}
+
+
+.todo-container {
+    position: absolute;
+    top: 75%;
+    left: 54%;
+    transform: translate(-70%, -54%);
+    font-size: 1em;
+    overflow-wrap: break-word;
+}
+
+.quote-container {
+    position: fixed;
+    top: 95%;
+    left: 65%;
+    right: 0;
+    transform: translate(-95%, -65%);
+    text-align: center;
+}
+
+ul {
+    list-style: none;
+    text-align: left;
+    width: 500px;
+    margin: 0;
+    padding: 0;
+    margin-left: 20%;
+    margin-top: 20px;
+}
+li {
+    font-size: 2rem;
+}
+button {
+    border: none;
+    background-color: transparent;
+}
