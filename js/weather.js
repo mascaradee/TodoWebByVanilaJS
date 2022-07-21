@@ -1,4 +1,4 @@
-const API_KEY = 'bb26541ad76658b14b2807113b8811b2';
+import { API_KEY } from "/js/api.js";
 
 function onGeoOk(position) {
     // console.log(position);
